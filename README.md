@@ -1,4 +1,8 @@
-# Let's do this App - Web Site
+# Angular8 Landing Template Sample with Boostrap
+
+**We took a generated with Angular CLI project, added Boostrap 4.0 and create a landing page, because sometimes simple things are way to complicated**
+
+**Have fun. your friends at [3Metas](https://www.3metas.com).**
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
@@ -25,3 +29,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## About [3Metas](https://www.3metas.com)
+We are a Digital Strategy company building apps, services, and platforms for people and customers around the globe.
+
+Powered By [23Blocks](https://www.23blocks.com)
+
+With Love from Boulder, CO.
