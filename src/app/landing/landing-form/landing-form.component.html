@@ -1,0 +1,24 @@
+<!-- form goes here -->
+<form (ngSubmit)="processForm()">
+  <!-- email -->
+  <div class="field">
+    <input
+      type="email"
+      name="email"
+      class="input"
+      placeholder="Your Email"
+      [(ngModel)]="email"
+      required
+      email
+      #emailInput="ngModel"
+    />
+
+    <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+      you need to provide a valid email.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-outline-secondary">
+    Keep me posted
+  </button>
+</form>
