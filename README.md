@@ -1,6 +1,6 @@
 # Angular8 Landing Template Sample with Boostrap
 
-**We took a generated with Angular CLI project, added Boostrap 4.0 and create a landing page, because sometimes simple things are way to complicated**
+**We took a generated with Angular CLI project, added Boostrap 4.0 and create a landing, contact form, privacy policy and not-found page, because sometimes simple things are way to complicated**
 
 **Have fun. your friends at [3Metas](https://www.3metas.com).**
 
