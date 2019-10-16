@@ -1,0 +1,83 @@
+<!-- form goes here -->
+<form (ngSubmit)="processForm()">
+  <!-- name -->
+  <div class="field">
+    <input
+      type="text"
+      name="name"
+      class="input"
+      placeholder="Your First Name"
+      [(ngModel)]="firstName"
+      required
+      minlength="3"
+      #firstNameInput="ngModel"
+    />
+
+    <div
+      class="help is-error"
+      *ngIf="firstNameInput.invalid && firstNameInput.dirty"
+    >
+      First Name is required and needs to be at least 3 characters long.
+    </div>
+  </div>
+
+  <!-- name -->
+  <div class="field">
+    <input
+      type="text"
+      name="name"
+      class="input"
+      placeholder="Your Last Name"
+      [(ngModel)]="lastName"
+      required
+      minlength="3"
+      #lastNameInput="ngModel"
+    />
+
+    <div
+      class="help is-error"
+      *ngIf="lastNameInput.invalid && lastNameInput.dirty"
+    >
+      Last Name is required and needs to be at least 3 characters long.
+    </div>
+  </div>
+
+  <!-- email -->
+  <div class="field">
+    <input
+      type="email"
+      name="email"
+      class="input"
+      placeholder="Your Email"
+      [(ngModel)]="email"
+      required
+      email
+      #emailInput="ngModel"
+    />
+
+    <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+      you need to provide a valid email.
+    </div>
+  </div>
+
+  <!-- message -->
+  <div class="field">
+    <textarea
+      class="textarea"
+      name="message"
+      placeholder="What's on your mind?"
+      [(ngModel)]="message"
+      required
+      #messageInput="ngModel"
+    ></textarea>
+
+    <div
+      class="help is-error"
+      *ngIf="messageInput.invalid && messageInput.dirty"
+    >
+      Message is required.
+    </div>
+  </div>
+
+  <button type="submit" class="button is-danger is-large">Submit</button>
+</form>
