@@ -11,8 +11,8 @@ export class WebComponent {
   mainCallOut$: Observable<any>;
 
   constructor() {
-    this.cards$ = [];
-    this.mainCallOut$ = [];
+    this.cards$ = new Observable<any[]>();
+    this.mainCallOut$ = new Observable<any[]>();
   }
-  
+
 }
